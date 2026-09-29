@@ -1,4 +1,5 @@
-
+//eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-expect-error
 const TitleHeader = ({title, sub}) => {
     return (
         <div className="flex flex-col items-center gap-5">

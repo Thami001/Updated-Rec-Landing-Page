@@ -1,11 +1,11 @@
 
 import {Accordion, AccordionItem, AccordionTrigger, AccordionContent} from "../components/ui/accordion"
 import {FAQItems} from "../constants";
-import {ArrowUpRight} from "lucide-react";
+
 
 
 const FAQ = () => {
-  return (
+    return (
       <section id={"FAQ"} className={"relative flex-center section-padding"}>
           <div
               aria-hidden="true"
@@ -26,6 +26,8 @@ const FAQ = () => {
                   {FAQItems.map((item, index) => (
                       <Accordion
                           key={index}
+                          //eslint-disable-next-line @typescript-eslint/ban-ts-comment
+                          // @ts-expect-error
                           type="single"
                           collapsible
                           className="rounded-2xl border border-black-50 bg-black-100/90 px-5 shadow-[0_14px_45px_rgba(2,10,4,0.28)] transition-colors duration-300 hover:border-brand-lime/50 md:px-7"

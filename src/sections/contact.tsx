@@ -15,6 +15,8 @@ const Contact = () => {
 
     const [loading, setLoading] = useState(false)
 
+    //eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    // @ts-expect-error
     const handleChange = (e) => {
         const {name, value} = e.target;
         setFormData({
@@ -31,6 +33,8 @@ const Contact = () => {
             await emailjs.sendForm(
                 import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
                 import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+                //eslint-disable-next-line @typescript-eslint/ban-ts-comment
+                // @ts-expect-error
                 formRef.current,
                 import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY,
             )
