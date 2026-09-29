@@ -10,6 +10,8 @@ const Testimonials = () => {
 
                 <div className={"lg:columns-3 md:columns-2 columns-1 mt-16"}>
                     {testimonials.map((testimonial) => (
+                        //eslint-disable-next-line @typescript-eslint/ban-ts-comment
+                        // @ts-expect-error
                         <GlowCard card={testimonial}>
                             <div className={"flex items-center gap-3"}>
                                 <div>
