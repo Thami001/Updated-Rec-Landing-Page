@@ -52,12 +52,12 @@ const Hero = () => {
                         <p className={"text-white-50 md:text-xl relative z-10 pointer-events-none"}>
                             Helping you reduce energy costs and move towards greater energy independence.
                         </p >
-                        <Button className={"md:w-80 md:h-16 w-16 h-12"} id={"contact-btn group"} text={"Witness Our Expertise"}/>
+                        <Button className={"hero-cta"} id={"contact-btn group"} text={"Witness Our Expertise"}/>
                     </div>
                 </header>
 
                 {/*Right Side = 3D Model */}
-                <figure>
+                <figure className={"hidden md:block"}>
                     <div className={"hero-3d-layout hover:cursor-grab"}>
                         <HeroExperience/>
                     </div>
