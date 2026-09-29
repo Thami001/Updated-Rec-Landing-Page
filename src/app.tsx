@@ -7,6 +7,7 @@ import Contact from "./sections/contact.tsx";
 import Footer from "./sections/footer.tsx";
 import FAQ from "./sections/FAQ.tsx";
 import FeatureCards from "./sections/featureCards.tsx";
+import {Analytics} from "@vercel/analytics/react";
 
 
 const App = () => {
@@ -21,6 +22,7 @@ const App = () => {
             <FAQ/>
             <Contact/>
             <Footer/>
+            <Analytics/>
         </>
     );
 };
